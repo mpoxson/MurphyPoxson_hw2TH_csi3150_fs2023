@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murphy's Portfolio</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="page_header">
+      <div id="navcontain">
+        <nav id="navbar">
+          <a href="../index.html">Home</a>
+          <a href="./my_fun_facts.html">Fun Facts</a>
+          <a href="./my_resume.html">Resume</a>
+        </nav>
+      </div>
+      <hr />
+      <h1>Some Fun Facts About Me</h1>
+    </header>
+    <main id="main_body">
+      <section id="favBook">
+        <hr />
+        <h2>Favorite Book</h2>
+        <h3>Brave New World</h3>
+        <div id="imgContain">
+          <!--image from http://www.amazon.com/Brave-New-World-Aldous-Huxley/dp/0060850523-->
+          <img src="../img/BNW.jpg" alt="Brave New World cover" />
+        </div>
+        <div id="purchaseLink">
+          <a
+            href="http://www.amazon.com/Brave-New-World-Aldous-Huxley/dp/0060850523"
+            >Purchase Here</a
+          >
+        </div>
+        <p>
+          Brave new world is a dystopian book that explores what it means to be
+          human and live a fulfilling life in a world full of technology and
+          controlled by the government.
+        </p>
+        <hr />
+      </section>
+      <section id="favSong">
+        <h2>Favorite Song</h2>
+        <h3>GotItBad by St. Paul and the Broken Bones</h3>
+        <div id="audioCon">
+          <!--Audio downloaded from youtube: https://www.youtube.com/watch?v=RBNzf3my46A
+            Controls attribute allows user to start, stop, mute, speed up, and download audio-->
+          <audio controls src="../audio/GotItBad.mp3">GotItBad Audio</audio>
+        </div>
+        <div id="listenLink">
+          <a href="https://www.youtube.com/watch?v=RBNzf3my46A"
+            >Listen on YouTube</a
+          >
+        </div>
+        <hr />
+      </section>
+      <section id="favShow">
+        <h2>Favorite Show</h2>
+        <h3>The Good place</h3>
+        <!--Frame content is from embed youtube link
+        embeds youtube video player into website allowing user to watch video without having to site.-->
+        <div id="frameContain">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9QxRbzFk3zk?si=4o5zdln8tvWd8381"
+            title="YouTube video player"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer id="pageFooter">
+      <hr />
+      <h2>Contact me!</h2>
+      <!--Links open mail app, try to make a call, and goes to linkedin page-->
+      <a href="mailto:mpoxson@oakland.edu">Email</a>
+      <a href="tel:+1234567890">Phone</a>
+      <a href="http://www.linkedin.com/in/murphy-p-21a457232/">LinkedIn</a>
+      <!--Address tag changes text on screen-->
+      <address>12345 Street Rd, Sterling Heights, Michigan</address>
+      <!--Copyright C code found here: https://blog.hubspot.com/website/html-code-copyright#:~:text=To%20add%20copyright%20symbols%20to,tags%2C%20to%20get%20the%20results.
+        Creates symbol for copyright-->
+      <p>&copy; Murphy's Portfolio Website 2023</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murphy's Portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="page_header">
+      <div id="navContainer">
+        <nav id="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./html/my_fun_facts.html">Fun Facts</a>
+          <a href="./html/my_resume.html">Resume</a>
+        </nav>
+      </div>
+      <hr />
+      <h1>Murphy Poxson's Portfolio Website</h1>
+    </header>
+    <hr />
+    <main id="main_body">
+      <section id="img_quote">
+        <div id="imgContain">
+          <!--Image located in img folder, I took the photo. 
+          Maintained the height/width ratio of the original image
+        but downsized it-->
+          <img
+            src="./img/Selfie.JPG"
+            alt="Self Portrait"
+            height="121"
+            width="100"
+          />
+        </div>
+        <div id="quoteContain">
+          <!--blockquote indents the text on page-->
+          <blockquote>
+            “Opportunities don't happen, you create them.” — Chris Grosser
+          </blockquote>
+        </div>
+        <hr />
+      </section>
+      <section id="about_progress">
+        <article id="aboutMe">
+          <p>Hello, I am Murphy Poxson</p>
+          <p>
+            I am a computer science major at Oakland University and I am
+            graduating May 2024. I grew up in Sterling Heights, Michigan and I
+            graduated as a valedictorian from Henry Ford II High School. The
+            past two summers I interned at Ally Financial in Detroit. I was an
+            Automation Engineer for both internships. During the school year, I
+            work as an IT Assistant for Oakland University. Before I came to OU,
+            I worked at MJR Digital Cinemas as an usher and a supervisor. I
+            would like to work as a software developer in the future. You can
+            learn more about me on my
+            <a href="./html/my_fun_facts.html">Fun Facts page</a> and on my
+            <a href="./html/my_resume.html">Resume page</a>.
+          </p>
+        </article>
+        <div id="creditContain">
+          <!--Label for the progress bar using it's id-->
+          <label for="credits">Progress to Degree: 112/128 </label>
+          <!--Got information from https://www.w3schools.com/tags/tag_progress.asp
+          progress tag creates progress bar based on value and max provided-->
+          <progress id="credits" value="112" max="128">87.5%</progress>
+        </div>
+      </section>
+    </main>
+    <br />
+    <hr />
+    <footer id="pageFooter">
+      <h2>Contact me!</h2>
+      <!--Links open mail app, try to make a call, and goes to linkedin page-->
+      <a href="mailto:mpoxson@oakland.edu">Email</a>
+      <a href="tel:+1234567890">Phone</a>
+      <a href="http://www.linkedin.com/in/murphy-p-21a457232/">LinkedIn</a>
+      <!--Address tag changes text on screen-->
+      <address>12345 Street Rd, Sterling Heights, Michigan</address>
+      <!--Copyright C code found here: https://blog.hubspot.com/website/html-code-copyright#:~:text=To%20add%20copyright%20symbols%20to,tags%2C%20to%20get%20the%20results.
+      Creates symbol for copyright-->
+      <p>&copy; Murphy's Portfolio Website 2023</p>
+    </footer>
+  </body>
+</html>
