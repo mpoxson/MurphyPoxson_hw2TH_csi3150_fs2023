@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Murphy's Portfolio</title>
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header id="page_header">
-      <div id="navBarContainer">
-        <nav id="navbar">
-          <a href="../index.html">Home</a>
-          <a href="./my_fun_facts.html">Fun Facts</a>
-          <a href="./my_resume.html">Resume</a>
-        </nav>
-      </div>
+    <nav class="navbar">
+      <h1 id="header">Murphy Poxson's Portfolio Website</h1>
+      <ul id="Links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./my_fun_facts.html">Fun Facts</a></li>
+          <li><a href="./my_resume.html">Resume</a></li>
+        </div>
+      </ul>
+    </nav>
+    <hr />
+    <header>
       <div id="headeInfo">
-        <hr />
         <h1>Murphy Poxson - Resume</h1>
         <h2>12345 Street Dr, Sterling Heights, MI</h2>
         <h2>mpoxson@oakland.edu, (123)456-7890</h2>
