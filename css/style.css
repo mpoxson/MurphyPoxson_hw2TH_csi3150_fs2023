@@ -1,5 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+/* https://stackoverflow.com/questions/5383438/keeping-background-image-at-bottom#:~:text=background%2Dposition%20takes%20two%20arguments,body%20or%20the%20html%20tag%3F */
+
+html {
+  height: 100%;
+  background-color: #fffaf0;
+  background-image: url("../img/backgroundHome.svg");
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+
+body {
+  height: 76%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (min-width: 1083px) {
+  html {
+    background-size: cover;
+  }
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
+
+.main_body {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+}
+.iam {
+  text-align: center;
+  font-size: smaller;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+.aboutme,
+.imgquote {
+  width: 48%;
+  text-align: center;
+}
+
+.aboutme {
+  margin-left: 1%;
+  margin-bottom: 15%;
+}
+
+/* https://webcode.tools/generators/css/keyframe-animation */
+
+img {
+  max-width: 55%;
+  height: auto;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.iam {
+  font-size: larger;
+}
+
+.prog {
+  margin-top: 20px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  outline: 1px solid #fffaf0;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.ctaBtn {
+  margin-top: 25px;
+}
+
+.resumeBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.resumeBtn:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.resumeBtn:visited {
+  background-color: #fff6cc;
+  color: #000;
 }
