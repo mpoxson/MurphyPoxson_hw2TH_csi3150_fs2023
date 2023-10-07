@@ -5,7 +5,7 @@
   border: 0;
 }
 /* https://stackoverflow.com/questions/5383438/keeping-background-image-at-bottom#:~:text=background%2Dposition%20takes%20two%20arguments,body%20or%20the%20html%20tag%3F */
-
+/* Used above to configure background image to stick to the bottom of the screen */
 html {
   height: 100%;
   background-color: #fffaf0;
@@ -16,11 +16,13 @@ html {
   background-repeat: no-repeat;
 }
 
+/* Changed body height so that footer would sit at the bottom of the page */
 body {
-  height: 76%;
+  height: 80%;
   font-family: "Times New Roman", Times, serif;
 }
 
+/* Changed background size to cover so that the background would be dynamic */
 @media (min-width: 1083px) {
   html {
     background-size: cover;
@@ -28,7 +30,7 @@ body {
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
-
+/* Used above to help keep footer at bottom of the page */
 .main_body {
   min-height: 100%;
   margin: 0 auto;
@@ -40,11 +42,8 @@ footer {
   flex-shrink: 0;
   text-align: center;
 }
-.iam {
-  text-align: center;
-  font-size: smaller;
-}
 
+/* But image and quote next to text block for hero */
 main {
   width: 100%;
   display: flex;
@@ -54,19 +53,21 @@ main {
   flex-wrap: wrap;
 }
 
+/* Centered content */
 .aboutme,
 .imgquote {
   width: 48%;
   text-align: center;
 }
 
+/* moved about me text up to better work with hero */
 .aboutme {
   margin-left: 1%;
   margin-bottom: 15%;
 }
 
 /* https://webcode.tools/generators/css/keyframe-animation */
-
+/* Used above for animation of image and progress bar */
 img {
   max-width: 55%;
   height: auto;
@@ -85,24 +86,30 @@ img {
   }
 }
 
+/* Made hello text larger */
 .iam {
   font-size: larger;
 }
 
+/* moved progress bar down and added animations */
 .prog {
   margin-top: 20px;
   animation: myAnim 1s ease 0s 1 normal forwards;
   outline: 1px solid #fffaf0;
 }
 
+/* hr disappeared, had to use border to make it reappear */
+
 hr {
   border: 1px solid black;
 }
 
+/* Move button down */
 .ctaBtn {
   margin-top: 25px;
 }
 
+/* Make link look like a button */
 .resumeBtn {
   border: 1px solid black;
   border-radius: 10px;
@@ -113,11 +120,13 @@ hr {
   background-color: black;
 }
 
+/* Change cursor, color on hover */
 .resumeBtn:hover {
   background-color: gray;
   cursor: pointer;
 }
 
+/* Change look after link is clicked */
 .resumeBtn:visited {
   background-color: #fff6cc;
   color: #000;
